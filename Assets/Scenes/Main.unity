@@ -353,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5220748244377922522, guid: 1f4d6680efe2f854c8cd329944d21ee1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0517013
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5220748244377922522, guid: 1f4d6680efe2f854c8cd329944d21ee1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2045,6 +2045,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 244117098584933235, guid: 1f4d6680efe2f854c8cd329944d21ee1, type: 3}
+      propertyPath: m_Height
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4541161322963676671, guid: 1f4d6680efe2f854c8cd329944d21ee1, type: 3}
       propertyPath: m_Name
       value: Robot
