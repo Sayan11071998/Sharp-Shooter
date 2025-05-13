@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Red
+  m_Name: Dark Gray
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -128,8 +128,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.6010781, g: 0.20519407, b: 0.1514846, a: 1}
-    - _Color: {r: 0.6010781, g: 0.20519403, b: 0.15148455, a: 1}
+    - _BaseColor: {r: 0.20101202, g: 0.22458385, b: 0.25067383, a: 1}
+    - _Color: {r: 0.20101199, g: 0.2245838, b: 0.2506738, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

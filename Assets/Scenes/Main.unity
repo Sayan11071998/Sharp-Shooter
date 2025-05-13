@@ -942,6 +942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 579555785}
   muzzleFlash: {fileID: 921193378}
+  hitVFXPrefab: {fileID: 2441387557689100275, guid: 0b8b1fd305ce43d4eb044e897202f102, type: 3}
   damageAmount: 1
 --- !u!1 &1153832006
 GameObject:
@@ -2141,8 +2142,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4887678159722145490, guid: 9f2d745edc9598843ae1bad254041ab8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d9051c76ad2c5414cac3276bafda9d23, type: 2}
     - target: {fileID: 7018718582738380711, guid: 9f2d745edc9598843ae1bad254041ab8, type: 3}
-      propertyPath: moveWithTransform
+      propertyPath: stopAction
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7214423715063171431, guid: 9f2d745edc9598843ae1bad254041ab8, type: 3}
