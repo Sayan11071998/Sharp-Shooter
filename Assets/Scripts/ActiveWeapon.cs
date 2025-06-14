@@ -1,22 +1,31 @@
+using Cinemachine;
 using StarterAssets;
 using UnityEngine;
 
 public class ActiveWeapon : MonoBehaviour
 {
     [SerializeField] private WeaponSO weaponSO;
+    [SerializeField] private CinemachineVirtualCamera playerFollowCamera;
+    [SerializeField] private GameObject zoomVignette;
 
     private Animator animator;
     private StarterAssetsInputs starterAssetsInputs;
     private Weapon currentWeapon;
+    private FirstPersonController firstPersonController;
 
     private const string SHOOT_STRING = "Shoot";
 
     private float timeSinceLastShot = 0f;
+    private float defaultFOV;
+    private float defaultRotationSpeed;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         starterAssetsInputs = GetComponentInParent<StarterAssetsInputs>();
+        firstPersonController = GetComponentInParent<FirstPersonController>();
+        defaultFOV = playerFollowCamera.m_Lens.FieldOfView;
+        defaultRotationSpeed = firstPersonController.RotationSpeed;
     }
 
     private void Start()
@@ -65,11 +74,15 @@ public class ActiveWeapon : MonoBehaviour
 
         if (starterAssetsInputs.zoom)
         {
-            Debug.Log("Zooming in");
+            playerFollowCamera.m_Lens.FieldOfView = weaponSO.ZoomAmount;
+            zoomVignette.SetActive(true);
+            firstPersonController.ChangeRotationSpeed(weaponSO.ZoomRotationSpeed);
         }
         else
         {
-            Debug.Log("Not Zooming in");
+            playerFollowCamera.m_Lens.FieldOfView = defaultFOV;
+            zoomVignette.SetActive(false);
+            firstPersonController.ChangeRotationSpeed(defaultRotationSpeed);
         }
     }
 }
