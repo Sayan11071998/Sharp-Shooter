@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2729408321004265619}
   m_Layer: 0
-  m_Name: Turrent Spawn Position
+  m_Name: Projectile Spawn Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1078370657686852238}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.612, z: 1.85}
+  m_LocalPosition: {x: -0, y: 0.612, z: 2.021}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -428,5 +428,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df35ce6293cb5d4692ce00e3c797bfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 3126447879531504105, guid: f23aa115629d3c047b9a3d985c24cd3b, type: 3}
   turretHead: {fileID: 4921630711994009197}
   PlayerTargetPoint: {fileID: 0}
+  projectileSpawnPoint: {fileID: 2729408321004265619}
+  fireRate: 2
+  damage: 2
