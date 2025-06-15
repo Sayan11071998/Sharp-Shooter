@@ -20,7 +20,10 @@ public class Turret : MonoBehaviour
 
     private void Update()
     {
-        turretHead.LookAt(PlayerTargetPoint.position);
+        if (PlayerTargetPoint != null)
+        {
+            turretHead.LookAt(PlayerTargetPoint.position);
+        }
     }
 
     IEnumerator FireRoutine()
@@ -28,9 +31,13 @@ public class Turret : MonoBehaviour
         while (player)
         {
             yield return new WaitForSeconds(fireRate);
-            Projectile newProjectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity).GetComponent<Projectile>();
-            newProjectile.transform.LookAt(PlayerTargetPoint);
-            newProjectile.Init(damage);
+            
+            if (PlayerTargetPoint != null)
+            {
+                Projectile newProjectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity).GetComponent<Projectile>();
+                newProjectile.transform.LookAt(PlayerTargetPoint);
+                newProjectile.Init(damage);
+            }
         }
     }
 }
