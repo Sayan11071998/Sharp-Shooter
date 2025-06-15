@@ -72,3 +72,7 @@ Enter the arena as a lone gunner facing relentless waves of mechanical enemies. 
 ---
 
 ## Play Link
+
+
+[![Gameplay Video](https://img.youtube.com/vi/-uoUsUf0m28/maxresdefault.jpg)](https://youtu.be/-uoUsUf0m28)
+### [Watch this video on YouTube](https://youtu.be/-uoUsUf0m28)
