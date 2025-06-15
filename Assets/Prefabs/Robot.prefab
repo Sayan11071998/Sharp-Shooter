@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 5440754566273579077}
   - component: {fileID: 8576244275562852274}
   - component: {fileID: 4571200503146784765}
+  - component: {fileID: 5278620270213642564}
   m_Layer: 6
   m_Name: Robot
   m_TagString: Untagged
@@ -162,6 +163,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   robotExplosionVFX: {fileID: 8777850357311863055, guid: dec10a4dad464bc4a971e6985b5b72d1, type: 3}
   startingHealth: 3
+--- !u!136 &5278620270213642564
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4541161322963676671}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1321044409839413811
 PrefabInstance:
   m_ObjectHideFlags: 0
