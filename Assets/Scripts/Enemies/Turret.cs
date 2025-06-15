@@ -21,9 +21,7 @@ public class Turret : MonoBehaviour
     private void Update()
     {
         if (PlayerTargetPoint != null)
-        {
             turretHead.LookAt(PlayerTargetPoint.position);
-        }
     }
 
     IEnumerator FireRoutine()
@@ -31,7 +29,7 @@ public class Turret : MonoBehaviour
         while (player)
         {
             yield return new WaitForSeconds(fireRate);
-            
+
             if (PlayerTargetPoint != null)
             {
                 Projectile newProjectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity).GetComponent<Projectile>();

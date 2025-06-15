@@ -9,10 +9,7 @@ public class EnemyHealth : MonoBehaviour
 
     private int currentHealth;
 
-    private void Awake()
-    {
-        currentHealth = startingHealth;
-    }
+    private void Awake() => currentHealth = startingHealth;
 
     private void Start()
     {
@@ -34,6 +31,6 @@ public class EnemyHealth : MonoBehaviour
     public void SelfDestruct()
     {
         Instantiate(robotExplosionVFX, transform.position, Quaternion.identity);
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 }

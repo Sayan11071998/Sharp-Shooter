@@ -5,10 +5,7 @@ public class Explosion : MonoBehaviour
     [SerializeField] private float radius = 1.5f;
     [SerializeField] private int damage = 3;
 
-    private void Start()
-    {
-        Explode();
-    }
+    private void Start() => Explode();
 
     private void OnDrawGizmos()
     {

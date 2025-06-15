@@ -8,20 +8,11 @@ public class Projectile : MonoBehaviour
     private Rigidbody rb;
     private int damage;
 
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
+    private void Awake() => rb = GetComponent<Rigidbody>();
 
-    private void Start()
-    {
-        rb.linearVelocity = transform.forward * spped;
-    }
+    private void Start() => rb.linearVelocity = transform.forward * spped;
 
-    public void Init(int damage)
-    {
-        this.damage = damage;
-    }
+    public void Init(int damage) => this.damage = damage;
 
     private void OnTriggerEnter(Collider other)
     {

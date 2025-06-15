@@ -28,9 +28,7 @@ public class PlayerHealth : MonoBehaviour
         AdjustShieldUI();
 
         if (currentHealth <= 0)
-        {
             PlayerGameOver();
-        }
     }
 
     private void PlayerGameOver()
@@ -48,13 +46,9 @@ public class PlayerHealth : MonoBehaviour
         for (int i = 0; i < shieldBars.Length; i++)
         {
             if (i < currentHealth)
-            {
                 shieldBars[i].gameObject.SetActive(true);
-            }
             else
-            {
                 shieldBars[i].gameObject.SetActive(false);
-            }
         }
     }
 }

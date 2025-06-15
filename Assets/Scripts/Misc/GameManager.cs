@@ -17,9 +17,7 @@ public class GameManager : MonoBehaviour
         enemiesLeftText.text = ENEMIES_LEFT_STRING + enemiesLeft;
 
         if (enemiesLeft <= 0)
-        {
             youWinText.SetActive(true);
-        }
     }
 
     public void RestartLevelButton()
@@ -28,8 +26,5 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(currentScene);
     }
 
-    public void QuitButton()
-    {
-        Application.Quit();
-    }
+    public void QuitButton() => Application.Quit();
 }

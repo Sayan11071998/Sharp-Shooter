@@ -7,10 +7,7 @@ public class Weapon : MonoBehaviour
 
     private CinemachineImpulseSource impulseSource;
 
-    private void Awake()
-    {
-        impulseSource = GetComponent<CinemachineImpulseSource>();
-    }
+    private void Awake() => impulseSource = GetComponent<CinemachineImpulseSource>();
 
     public void Shoot(WeaponSO weaponSO)
     {
