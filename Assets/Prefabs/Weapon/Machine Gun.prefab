@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8724106398455428148}
   - component: {fileID: 5052478802517716832}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Machine Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 3997331269730909479}
   - component: {fileID: 6552084145123468040}
   - component: {fileID: 1096747906172071933}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Muzzle Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4890,7 +4890,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3438486890602222898}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4964,6 +4964,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e8c5e5625b7bd884899700bf60088473, type: 3}
       propertyPath: m_Name
       value: Heavy_machine_gun_01_Blue_Team
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e8c5e5625b7bd884899700bf60088473, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

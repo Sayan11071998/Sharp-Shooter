@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6782481490446485260}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 5111195239688204057}
   - component: {fileID: 3132938200937066806}
   - component: {fileID: 9128705228049055171}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Muzzle Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4876,7 +4876,7 @@ GameObject:
   m_Component:
   - component: {fileID: 614041978609509898}
   - component: {fileID: 4001942854566231390}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Sniper Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4964,6 +4964,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 860f35edef6dcfe40b58b14593dfeafb, type: 3}
       propertyPath: m_Name
       value: Sniper_01_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 860f35edef6dcfe40b58b14593dfeafb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
