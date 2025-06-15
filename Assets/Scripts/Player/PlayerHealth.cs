@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera deathVirtualCamera;
     [SerializeField] private Transform weaponCamera;
     [SerializeField] private Image[] shieldBars;
+    [SerializeField] private GameObject gameOverContainer;
 
     private int currentHealth;
     private int gameOverVirtualCameraPriority = 20;
@@ -27,10 +28,16 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            weaponCamera.parent = null;
-            deathVirtualCamera.Priority = gameOverVirtualCameraPriority;
-            Destroy(this.gameObject);
+            PlayerGameOver();
         }
+    }
+
+    private void PlayerGameOver()
+    {
+        weaponCamera.parent = null;
+        deathVirtualCamera.Priority = gameOverVirtualCameraPriority;
+        gameOverContainer.SetActive(true);
+        Destroy(this.gameObject);
     }
 
     private void AdjustShieldUI()
