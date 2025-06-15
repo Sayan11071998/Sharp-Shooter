@@ -360,7 +360,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff5d4ce69657fb542be2d0f7d920f92e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 5
+  startingHealth: 7
+  deathVirtualCamera: {fileID: 0}
+  weaponCamera: {fileID: 1048087594083610813}
+  shieldBars:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &7153466991557663282
 GameObject:
   m_ObjectHideFlags: 0
